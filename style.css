@@ -16,8 +16,8 @@ body {
 
 #login {
     background-color: white;
-    padding: 40px;
-    margin-top: 30px;
+    padding: 30px;
+    margin-top: 10px;
     width: 60vw;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.322);
@@ -46,11 +46,10 @@ label {
     margin-bottom: 20px;
 }
 .input {
-    padding: 7px;
+    padding: 9px;
     border-radius: 8px;
     width: 100%;
     border: 1px solid orange;
-    
 }
 form > input[type=submit] {
     display: block;
@@ -61,18 +60,21 @@ form > input[type=submit] {
     color: white;
     border: none;
     border-radius: 5px;
+    margin-bottom: 10px;
     cursor: pointer;
+    font-size: 1.4em;
 }
 form > input[type=submit]:hover {
     background-color: orangered;
 }
-form > .botao {
-    display: block;
+form > a.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-size: 1em;
     width: 100%;
     height: 40px;
-    padding-top: 5px;
+    padding: 5px;
     margin-top: 5px;
     background-color: white;
     color: black;
@@ -82,9 +84,63 @@ form > .botao {
 }
 
 form > a.botao {
-    font-size: 0.8em;
+    font-size: 1.4em;
 }
 form > a.botao:hover {
-    background-color: orange;
+    background-color: orangered;
     color: white;
+}
+@media screen and (min-width: 375px) and (max-width:414px){
+    section#login {
+        width: 90vw;
+        padding: 20px;
+    }
+    #formulario h1{
+        font-size: 2.1em;
+    }
+    #formulario p{
+        margin-bottom: 20px;
+        font-size: .9em;
+    }
+    label {
+        font-size: 1.2em;
+    }
+    form > input[type=submit] {
+        font-size: 1em;
+    }
+
+    form > a.botao {
+        font-size: 1em;
+    }
+
+}
+@media screen and (min-width:412px) and (max-width:768px) {
+    section#login {
+        width: 90vw;
+    }
+    #formulario h1{
+        font-size: 2.4em;
+    }
+    form > input[type=submit] {
+        font-size: 1.5em;
+    }
+
+    form > a.botao {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section#login {
+        width: 70vw;
+    }
+    form > input[type=submit] {
+        font-size: 1.6em;
+        height: 50px;
+    }
+
+    form > a.botao {
+        font-size: 1.6em;
+        height: 50px;
+    }
 }
