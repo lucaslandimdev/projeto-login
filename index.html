@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <main>
@@ -13,6 +14,10 @@
                 <h1>Faça o seu login</h1>
                 <p>Seja Bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configuraçãoes no seu ambiente</p>
                 <form action="#" method="post" autocomplete="on">
+                    <div class="campo">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" class="input" id="nome" placeholder="Seu nome" autocomplete="name" required>
+                    </div>
                     <div class="campo">
                         <label for="ilogin">Seu e-mail</label>
                         <input type="email" class="input" name="login" id="ilogin" placeholder="exemplo@gmail.com" autocomplete="email" required maxlength="30">
@@ -27,5 +32,6 @@
             </div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
